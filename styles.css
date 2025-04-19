@@ -1,0 +1,230 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #007bff;
+}
+/* Estilo general del contenedor */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu h2 {
+    color: #495057;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu-link {
+    display: block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #0056b3;
+}
+/* Estilo para el enlace de Cerrar Sesión */
+.logout-link {
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.logout-link:hover {
+    color: #a71d2a;
+    text-decoration: underline;
+}
+/* Estilos para mensajes */
+.message {
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #495057;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Contenedor para hacer la tabla desplazable */
+.table-container {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    margin-top: 20px;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; /* Asegura que las columnas tengan un ancho fijo */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word; /* Permite que el texto largo se ajuste dentro de la celda */
+}
+
+/* Limitar el ancho de las columnas */
+table th, table td {
+    max-width: 150px; /* Ajusta el valor según sea necesario */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Muestra "..." si el texto es demasiado largo */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+}
+
+/* Estilo para la columna de sinopsis */
+table td:nth-child(8) { /* La columna de sinopsis */
+    max-width: 300px; /* Ajusta el ancho máximo */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilo para el encabezado */
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Estilo para las filas alternas */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Enlaces */
+p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilo del pie de página */
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
